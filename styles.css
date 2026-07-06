@@ -174,7 +174,8 @@ h3 {
 .hero-text,
 .section-heading p,
 .availability p,
-.feature-list p {
+.feature-list p,
+.about-copy p {
   color: var(--muted);
   font-size: 1.05rem;
 }
@@ -334,6 +335,17 @@ h3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.highlight-grid,
+.tech-groups {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.tech-groups {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .service-card,
 .case-card {
   padding: 26px;
@@ -375,6 +387,10 @@ h3 {
   color: var(--muted);
 }
 
+.case-card strong {
+  color: var(--text);
+}
+
 dl {
   display: grid;
   gap: 6px;
@@ -401,6 +417,34 @@ dd {
 
 .case-card li {
   margin-bottom: 10px;
+}
+
+.service-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.service-list li {
+  margin-bottom: 6px;
+}
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 22px 0 18px;
+}
+
+.tech-badges span {
+  border: 1px solid rgba(120, 214, 198, 0.28);
+  border-radius: var(--radius);
+  padding: 6px 10px;
+  background: rgba(120, 214, 198, 0.08);
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .proof-grid {
@@ -506,7 +550,9 @@ dd {
   }
 
   .services-grid,
-  .case-list {
+  .case-list,
+  .highlight-grid,
+  .tech-groups {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -556,7 +602,9 @@ dd {
   }
 
   .services-grid,
-  .case-list {
+  .case-list,
+  .highlight-grid,
+  .tech-groups {
     grid-template-columns: 1fr;
   }
 
