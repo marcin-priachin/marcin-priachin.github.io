@@ -391,6 +391,17 @@ h3 {
   color: var(--text);
 }
 
+.project-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 4px 0 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #050608;
+  object-fit: cover;
+}
+
 dl {
   display: grid;
   gap: 6px;
